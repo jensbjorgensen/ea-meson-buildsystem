@@ -18,4 +18,4 @@ objcopy = 'llvm-objcopy'
 cpu = 'wasm32'
 cpu_family = 'wasm'
 endian = 'little'
-system = 'none
+system = 'none'
