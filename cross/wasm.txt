@@ -1,0 +1,21 @@
+# Meson Cross-compilation File for wasm32
+# For more information: http://mesonbuild.com/Cross-compilation.html
+
+[binaries]
+c = 'clang'
+cpp = 'clang++'
+ar = 'llvm-ar'
+strip = 'llvm-strip'
+
+[properties]
+c_args = [ '--target=wasm32',]
+c_link_args = [ '--target=wasm32',]
+cpp_args = [ '--target=wasm32',]
+cpp_link_args = [ '--target=wasm32',]
+objcopy = 'llvm-objcopy'
+
+[host_machine]
+cpu = 'wasm32'
+cpu_family = 'wasm'
+endian = 'little'
+system = 'none
